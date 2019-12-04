@@ -1,6 +1,10 @@
 /* Large desktop :1280px. */
 
-@media (min-width: 1201px) and (max-width: 1439px) {}
+@media (min-width: 1201px) and (max-width: 1439px) {
+	.intro-text {
+		padding-left: 30px;
+	}
+}
 
 /* Normal desktop :992px. */
 
@@ -29,6 +33,10 @@
 
 	.section-heading-2-p-a {
 		padding-bottom: bottom: 45px
+	}
+
+	.intro-text {
+		padding-left: 30px;
 	}
 }
 
@@ -68,6 +76,10 @@
 
 	.default-margin-mt-sm {
 		margin-top: 30px
+	}
+
+	.intro-text {
+		padding-left: 30px;
 	}
 
 	.intro-text h1 {
@@ -172,6 +184,7 @@
 	.intro-text {
 		padding-top: 30px;
 		margin-bottom: 0px;
+		padding-left: 10px;
 	}
 
 	.intro-text h1 {

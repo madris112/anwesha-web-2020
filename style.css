@@ -235,6 +235,21 @@ ul {
 	height: 100%;
 }
 
+#preloader .fade-in-fade-out {
+	-webkit-animation: fade 1s infinite alternate ease-in-out;
+	animation: fade 1s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes fade {
+	0% { opacity: 100%; }
+	100% { opacity: 10%; }
+}
+
+@keyframes fade {
+	0% { opacity: 100%; }
+	100% { opacity: 10%; }
+}
+
 #status {
 	position: absolute;
 	left: 50%;
@@ -781,25 +796,23 @@ ul.dropdown li a:after {
 .header-1-artwork {
 	position: absolute;
 	right: 60px;
-	bottom: -30vh;
+	bottom: -26vh;
 }
 
 .anweshasignboard {
 	height: 28vw;
 	width: auto;
-	-webkit-animation: mover 4s infinite;
-	animation: mover 4s infinite;
+	-webkit-animation: mover 4s infinite alternate ease-in-out;
+	animation: mover 4s infinite alternate ease-in-out;
 }
 
 @-webkit-keyframes mover {
 	0% { transform: translateY(0); }
-	10% { transform: translateY(-3vh); }
-	100% { transform: translateY(0); }
+	100% { transform: translateY(+4vh); }
 }
 @keyframes mover {
 	0% { transform: translateY(0); }
-	10% { transform: translateY(-3vh); }
-	100% { transform: translateY(0); }
+	100% { transform: translateY(+4vh); }
 }
 
 .layer {
@@ -848,7 +861,6 @@ ul.dropdown li a:after {
 .intro-text {
 	text-align: left;
 	padding-top: 60px;
-	padding-left: 30px;
 }
 
 .intro-text-2 {
