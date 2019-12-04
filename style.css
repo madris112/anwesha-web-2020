@@ -210,6 +210,10 @@ ul {
 	margin-top: 30px
 }
 
+.text-title {
+	font-family: 'zelda';
+}
+
 #scrollUp {
 	bottom: 0;
 	background: linear-gradient(238.45deg, #42D2FF 3.32%, #49e513 98.6%);
@@ -279,7 +283,7 @@ ul {
 	font-weight: 700;
 	margin-bottom: 35px;
 	position: relative;
-	font-size: 35px;
+	font-size: 2.5em;
 	display: inline-block
 }
 
@@ -802,6 +806,9 @@ ul.dropdown li a:after {
 .anweshasignboard {
 	height: 28vw;
 	width: auto;
+}
+
+.up-down {
 	-webkit-animation: mover 4s infinite alternate ease-in-out;
 	animation: mover 4s infinite alternate ease-in-out;
 }
@@ -969,8 +976,13 @@ ul.dropdown li a:after {
 /*========= 5. Service Area CSS ==========*/
 .services-area {
 	padding: 120px 0 45px 0;
-	background: linear-gradient(to top, #FDFFFD, #F5FFF5, rgba(202, 245, 202, 0.3));
+	/* background: linear-gradient(to top, #FDFFFD, #F5FFF5, rgba(202, 245, 202, 0.3)); */
+	background-color: #adffcc;
 	position: relative;
+}
+
+.theme-image {
+	clip-path: url(#clip-path-1);
 }
 
 /*5.1 Curve SVG*/
@@ -982,7 +994,7 @@ ul.dropdown li a:after {
 }
 
 #curve path {
-	fill: #fff
+	fill: navajowhite;
 }
 
 .single-service {

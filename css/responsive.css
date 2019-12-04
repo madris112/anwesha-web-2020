@@ -4,6 +4,13 @@
 	.intro-text {
 		padding-left: 30px;
 	}
+	.text-title {
+		font-family: 'zelda';
+		font-size: 4em;
+	}
+	.section-heading-1 h3 {
+		font-size: 4em;
+	}
 }
 
 /* Normal desktop :992px. */
@@ -38,6 +45,13 @@
 	.intro-text {
 		padding-left: 30px;
 	}
+	.text-title {
+		font-family: 'zelda';
+		font-size: 4em;
+	}
+	.section-heading-1 h3 {
+		font-size: 4em;
+	}
 }
 
 /* Tablet desktop :768px. */
@@ -66,7 +80,7 @@
 	}
 
 	.section-heading-1 h3 {
-		font-size: 28px;
+		font-size: 3em;
 	}
 
 	.single-client-img {
