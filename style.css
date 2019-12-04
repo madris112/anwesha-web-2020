@@ -9,6 +9,8 @@ Website: www.enventer.com
 
 --------------------------------------------------------------
 
+0. Extra Imports
+
 1. Default Theme CSS
     1.1 Preloader
     1.2 Section Heading
@@ -124,12 +126,21 @@ Website: www.enventer.com
 
 /*==================== 1. Default Theme CSS ===================*/
 
+@font-face {
+	font-family: "zelda";
+	src: url("/fonts/ZELDA\ FILL.otf");
+	}
+
 html,
 body {
 	height: 100%;
 	font-family: 'Nunito', sans-serif;
 	margin: 0px;
-	padding: 0px
+	padding: 0px;
+}
+
+body {
+	background-color: navajowhite;
 }
 
 ::-moz-selection {
@@ -714,6 +725,7 @@ ul.dropdown li a:after {
 	height: 100vh;
 	width: 100%;
 	background-repeat: no-repeat;
+	background: linear-gradient(270deg, #00B0E7 0%, #75F389 100%);
 	background-image: url('img/header.png');
 	background-attachment: fixed;
 	background-size: cover;
@@ -769,7 +781,11 @@ ul.dropdown li a:after {
 .header-1-artwork {
 	position: absolute;
 	right: 60px;
-	bottom: -150px;
+	bottom: -200px;
+}
+
+.anweshasignboard {
+	height: 28vw;
 }
 
 .layer {
@@ -818,6 +834,7 @@ ul.dropdown li a:after {
 .intro-text {
 	text-align: left;
 	padding-top: 60px;
+	padding-left: 30px;
 }
 
 .intro-text-2 {
@@ -828,10 +845,16 @@ ul.dropdown li a:after {
 .intro-text h1 {
 	text-transform: capitalize;
 	font-size: 50px;
+	font-family: 'zelda';
 	line-height: 65px;
 	color: #3e3d3d;
 	margin-bottom: 10px;
 	font-weight: 900;
+}
+
+.intro-text p {
+	
+	font-size: 1.5em;
 }
 
 /*3.4 Header Button */
