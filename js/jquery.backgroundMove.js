@@ -6,7 +6,7 @@ $('element').backgroundMove();
 (function($){
     $.fn.backgroundMove=function(options){
             var defaults={
-            movementStrength:'50'
+            movementStrength:'100'
         },
         options=$.extend(defaults,options);
 
@@ -18,8 +18,8 @@ $('element').backgroundMove();
             $this.mousemove(function(e){
                       var pageX = e.pageX - ($(window).width() / 2);
                       var pageY = e.pageY - ($(window).height() / 2);
-                      var newvalueX = width * pageX * -1 - 25;
-                      var newvalueY = height * pageY * -1 - 50;
+                      var newvalueX = width * pageX * -1 - 25 - ($(window).width() / 4);
+                      var newvalueY = height * pageY * -1 - 50 - ($(window).height() / 2);
                       $this.css("background-position", newvalueX+"px     "+newvalueY+"px");
             });
 

@@ -320,7 +320,8 @@ ul {
 	margin-bottom: 35px;
 	position: relative;
 	font-size: 35px;
-	display: inline-block
+	display: inline-block;
+	/* margin-top:-150px; */
 }
 
 .section-heading-2 h3:before {
@@ -982,7 +983,8 @@ ul.dropdown li a:after {
 }
 
 .theme-image {
-	clip-path: url(#clip-path-1);
+	animation: morph 2s ease-in-out infinite both alternate;
+	/* clip-path: url(#clip-path-1); */
 }
 
 /*5.1 Curve SVG*/
@@ -1073,9 +1075,10 @@ ul.dropdown li a:after {
 /*=========6. Portfolio Area CSS==========*/
 
 .portfolio-area {
-	padding: 120px 0;
-	background: -webkit-linear-gradient(to bottom, #FDFFFD, #F5FFF5A8, #a3f2a324);
-	background: linear-gradient(to bottom, #FDFFFD, #F5FFF5A8, #a3f2a324);
+	padding: 0 0 120px 0;
+	/* background: -webkit-linear-gradient(to bottom, #FDFFFD, #F5FFF5A8, #a3f2a324);
+	background: linear-gradient(to bottom, #FDFFFD, #F5FFF5A8, #a3f2a324); */
+	background-color: #adffcc;
 	border-bottom-left-radius: 73% 40%;
 	border-bottom-right-radius: 50% 20%;
 }
@@ -1118,13 +1121,16 @@ ul.dropdown li a:after {
 
 .single-portfolio-item img {
 	border-radius: 15px;
-	width: 100%
+	/* /* height: 100%; */
+	width: 100%;
+	/* object-fit: contain; */
 }
 
 /*6.2 Portfolio Item*/
 .single-portfolio-item {
 	position: relative;
-	margin: 0 15px
+	margin: 0 15px;
+	height: 22em;
 }
 
 .single-portfolio-item:last-child {
@@ -1140,9 +1146,9 @@ ul.dropdown li a:after {
 .portfolio-item-content {
 	position: absolute;
 	left: 3%;
-	top: 3%;
+	bottom: 3%;
 	width: 94%;
-	height: 94%;
+	height: 36%;
 	background-color: rgba(255, 255, 255, 0.95);
 	transition: .6s;
 	visibility: hidden;
@@ -1246,7 +1252,7 @@ ul.dropdown li a:after {
 /*========= 7. Expertise Area CSS==========*/
 .expertise-area {
 	padding: 120px 0;
-	background-color: #fff
+	/* background-color: #fff */
 }
 
 .expertise-image img {
@@ -1640,7 +1646,10 @@ ul.dropdown li a:after {
 .big-footer {
 	background-color: #151723;
 	padding: 120px 0;
-	background-image: url('img/./f-pattern.png');
+	/* background-image: url('img/completeteam.jpg'); */
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('img/completeteam.jpg');
+	/* background-size: 120%; */
+	background-position:center;
 }
 
 #footer-fixed {
