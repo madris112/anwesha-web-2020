@@ -180,11 +180,11 @@ h6 {
 	margin: 0 0 10px;
 }
 
-a {
+/*a {
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 	text-decoration: none;
-}
+}*/
 
 a:hover {
 	color: #6b6fff;
@@ -3233,5 +3233,3 @@ footer p {
 	background: linear-gradient(252.62deg, #84FC6A 8.92%, #48D6F2 96.59%);
 	border: 2px solid transparent
 }
-
-
